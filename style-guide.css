@@ -14,35 +14,26 @@ body.loaded {
 	opacity: 1;
 }
 
-
-
-.guide-container {
-	margin:20px 20px;
-	padding-bottom:300px;
-}
-.guide-title {
-	font-family:sans-serif;
+/* basic layout */
+.nav--quick {
+	list-style: none;
+	margin:0;
 }
 .guide-header {
 	display:block;
-	font-size:14px;
-	font-weight:bold;
-	color:#999;
-	line-height: 2em;
-	border-bottom: 1px solid #ccc;
-	font-family:sans-serif;
-	text-transform: uppercase;
-	margin-top:40px;
 }
-.guide-hint {
-	font-size:13px;
-	margin: 1em 0;
+.guide-header a {
+	float:right;
+}
+
+/* code blocks */
+pre {
+	max-height: 320px !important;
+	overflow: auto !important;
 }
 pre, [data-showsource] {
 	margin:30px 0;
 }
-
-
 
 @media screen and (max-width: 767px) {
 	html .prettyprint ol.linenums {
@@ -58,13 +49,45 @@ pre, [data-showsource] {
 	}
 }
 
-
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 980px) {
 	.guide-container {
-		max-width:960px;
+		max-width:920px;
 		margin:30px auto;
 	}
 	.guide-header {
 		margin-top:60px;
 	}
+}
+
+/************************************************************************************
+Your custom styles go below!
+************************************************************************************/
+
+body {
+	background:white;
+}
+.guide-container {
+	margin:20px 20px;
+	padding-bottom:300px;
+}
+.nav--quick-header {
+	margin-top: 20px;
+}
+.nav--quick {
+	padding: 1em;
+	background:#eee;
+}
+.guide-header {
+	font-size:14px;
+	font-weight:bold;
+	line-height: 2em;
+	text-transform: uppercase;
+	margin-top:40px;
+
+	color:#999;
+	border-bottom: 1px solid #ccc;
+}
+.guide-hint {
+	font-size:13px;
+	margin: 1em 0;
 }

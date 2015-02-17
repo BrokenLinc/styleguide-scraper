@@ -16,11 +16,12 @@
 
 		<div class="guide-container">
 			<h1 class="guide-title">Style Guide</h1>
-
+			
+			<ul class="nav nav--quick js-quick-nav"></ul>
 
 
 			<!-- replicate as many component blocks as you need. here's an example -->
-			<h3 class="guide-header">Headings</h3>
+			<h3 class="guide-header js-quick-nav-anchor">Headings</h3>
 			<!-- "data-showsource" says "show a code block of my contents below me" -->
 			<!-- note: comments or whitespace inside the block may cause weird indenting -->
 			<div data-showsource>
@@ -30,6 +31,16 @@
 				<h4>Heading 4</h4>
 				<h5>Heading 5</h5>
 				<h6>Heading 6</h6>
+			</div>
+
+
+
+			<h3 class="guide-header js-quick-nav-anchor">Unordered List</h3>
+			<p class="guide-hint">Note: This section shows how to use the [data-repeat] attribute.</p>
+			<div data-showsource>
+				<ul>
+					<li data-repeat="3">List item</li>
+				</ul>
 			</div>
 
 
